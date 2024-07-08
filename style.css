@@ -1,0 +1,169 @@
+body{
+    background-color: black;
+}
+#face{
+    height: 200px;
+    width: 200px;
+    background: chartreuse;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: auto;
+    margin-top: 150px;
+}
+#center{
+    height: 200px;
+    width: 200px;
+    background: chartreuse;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+    margin-top: 10px;
+}
+#ihan,#rhan{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    border-radius: 10px;
+    
+    
+    
+}
+#body{
+    margin: auto;
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+      
+}
+
+#lleg{
+    height: 100px;
+    width: 50px;
+    background-color: chartreuse;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+#rleg{
+    height: 100px;
+    width: 50px;
+    background-color: chartreuse;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+#leg{
+    width: 100px;
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+}
+#leye,#reye{
+    height: 25px;
+    width: 25px;
+    background: black;
+    border-radius: 50%;
+}
+#eyes{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 125px;
+    
+}
+#main{
+    height: 700px;
+    width: 400px;
+    border: 3px solid rgb(248, 238,238);
+    margin: auto;
+    margin-top: 50px;
+}
+
+#main:hover #face{
+    animation:  changeface 1s infinite;
+}
+@keyframes changeface{
+    0%{
+        transform:translateX(120px);
+        border-radius: 20px;
+        
+    }
+    50%{
+        transform:translateX(-120px);
+        
+
+    }
+    75%{
+        transform: translateY(200px);
+        
+
+    }
+    100%{
+        transform: translateY(-200px)
+        border-radius: 20px;
+    }
+}
+#main:hover #center{
+    animation: changecenter 1s infinite;
+
+}
+@keyframes changecenter{
+    0%{
+        transform: translateX(0px);
+        
+        
+        
+        
+    }
+    50%{
+        transform: translateX(25px);
+    }
+    75%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(75px);
+    }
+}
+#main:hover #leg{
+    animation: changeleg 1s infinite;
+
+}
+@keyframes changeleg{
+    0%{
+        transform: rotateX(45deg);
+        
+        
+    }
+    50%{
+        transform: rotateX(90deg);
+    }
+    75%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform:rotateY(360deg);
+    }
+}
+#main:hover #body{
+    animation: changehand 1s infinite;
+
+}
+@keyframes changehand{
+    0%{
+        transform: rotateX(45deg);
+        
+        
+    }
+    50%{
+        transform: rotateX(90deg);
+    }
+    75%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+    
+
+
